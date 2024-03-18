@@ -1,0 +1,17 @@
+.input-card {
+    /* width: 35%; */
+    border: 1px inset #000000;
+    margin-left: 3%;
+    padding: 2%;
+    overflow: visible !important;
+    background-color: #7EBAB0 !important;
+    box-shadow: 5px 8px 20px #00000085 !important;
+}
+
+.input-card .select-container {
+    margin: 0% 2%;
+}
+
+.input-card button {
+    margin: 3% 0.5%;
+}

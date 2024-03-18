@@ -1,0 +1,8 @@
+.output-card {
+    height: auto;
+    border: 1px solid #000000;
+    margin-left: 3%;
+    padding: 2%;
+    background-color: #7EBAB0 !important;
+    box-shadow: 5px 8px 20px #00000085 !important;
+}

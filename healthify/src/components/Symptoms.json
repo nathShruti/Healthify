@@ -1,0 +1,7 @@
+{
+    "symptoms": [
+      { "name": "Fever", "diagnosis": "Infection" },
+      { "name": "Cough", "diagnosis": "Respiratory issue" },
+      { "name": "Headache", "diagnosis": "Dehydration or stress" }
+    ]
+  }
