@@ -1,12 +1,13 @@
 body {
   margin: 0;
+  padding-bottom: 3%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: linear-gradient(to top right, #017561 , white); */
-  background-image: url('images/medical.jpg');
+  background-image: url('images/health_bg.jpg');
   background-size: cover;
 }
 

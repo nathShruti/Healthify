@@ -8,12 +8,10 @@ export default function OutputCard({ selectedValue ,displayData}) {
     return (
         <Card className='output-card'>
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div" >
+                <Typography gutterBottom variant="h4" component="div" >
                     Your Results:
                 </Typography>
                 <Typography variant="body2" color="black">
-                    Enter as many symptoms matches for accurate result.
-                    Enter as many symptoms matches for accurate result.
                     Enter as many symptoms matches for accurate result.
                     <ul>
                         {displayData && selectedValue?.map((option) => (
