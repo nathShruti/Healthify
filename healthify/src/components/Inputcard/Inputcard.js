@@ -8,17 +8,32 @@ import Select from 'react-select';
 import './Inputcard.css';
 
 const symptoms = [
-    { value: '1', label: 'Fever'},
-    { value: '2', label: 'Nausea'},
-    { value: '3', label: 'Headache'},
-    { value: '4', label: 'Nose Bleed'},
-    { value: '5', label: 'Cough'},
-    { value: '6', label: 'Shivers'},
-    { value: '7', label: 'Diarhea'},
-    { value: '8', label: 'Chest Pain'},
+    { value: '1', label: 'Fever' },
+    { value: '2', label: 'Nausea' },
+    { value: '3', label: 'Headache' },
+    { value: '4', label: 'Nose Bleed' },
+    { value: '5', label: 'Cough' },
+    { value: '6', label: 'Shivers' },
+    { value: '7', label: 'Diarhea' },
+    { value: '8', label: 'Chest Pain' },
 ];
 
-export default function MediaCard() {
+export default function MediaCard({ selectedValue, setSelectedValue, displayData, setDisplayData }) {
+
+    const handleChange = (value) => {
+        setSelectedValue(value);
+        setDisplayData(false);
+    };
+
+    const handleSubmit = () => {
+        if (selectedValue) {
+            console.log('Selected options:', selectedValue); // Or display on a card as needed
+        } else {
+            console.log('Please select an option');
+        }
+        setDisplayData(true);
+    };
+
     return (
         <div>
             <Card className='input-card'>
@@ -35,13 +50,14 @@ export default function MediaCard() {
                         // defaultValue={[symptomItem[1]]}
                         isMulti
                         name="symptoms"
-                        options= {symptoms}
+                        options={symptoms}
+                        onChange={handleChange}
                         className="basic-multi-select"
                         classNamePrefix="select"
                     />
                 </div>
                 <CardActions>
-                    <Button size="small" style={{color: 'white', backgroundColor: '#017561'}}>Submit</Button>
+                    <Button size="small" onClick={handleSubmit} style={{ color: 'white', backgroundColor: '#017561' }}>Submit</Button>
                 </CardActions>
             </Card>
 
